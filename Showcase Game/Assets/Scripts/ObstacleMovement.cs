@@ -14,6 +14,7 @@ public class ObstacleMovement : MonoBehaviour
     void Update()
     {
         transform.Translate(new Vector3(0.0f, 0.0f, -0.0150f));
+        transform.Rotate(new Vector3(0.0f, 0.0f, 0.1f));
     }
 
     public void OnTriggerEnter(Collider other)
