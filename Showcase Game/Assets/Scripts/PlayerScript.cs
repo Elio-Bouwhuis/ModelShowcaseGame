@@ -26,7 +26,7 @@ public class PlayerScript : MonoBehaviour
             anim["Armature|Sliding2"].speed = 1.5f;
         }
 
-        if (anim["Armature|Jumping"].time > 2.49f || anim["Armature|Sliding2"].time > 2.49f)
+        if (anim["Armature|Jumping"].time > 2.43f || anim["Armature|Sliding2"].time > 2.43f)
         {
             anim.Play("Armature|Running");
         }

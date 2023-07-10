@@ -13,8 +13,8 @@ public class ObstacleMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(new Vector3(0.0f, 0.0f, -0.0150f));
-        transform.Rotate(new Vector3(0.0f, 0.0f, 0.1f));
+        transform.position += (new Vector3(0.0f, 0.0f, -10f) * Time.deltaTime);
+        transform.Rotate(new Vector3(0.0f, 0.0f, 0.1f) * Time.deltaTime);
     }
 
     public void OnTriggerEnter(Collider other)
